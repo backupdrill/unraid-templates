@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>
+Unraid templates for BackupDrill, an open-source (MIT) CLI that backs up Supabase projects to a bucket you own and checks that the backup restores. The container here runs scheduled backups of the Postgres database and, optionally, Storage files.
+
+Questions and bug reports: https://github.com/backupdrill/cli/issues
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/backupdrill/unraid-templates/main/images/backupdrill.png</Icon>
+  <WebPage>https://backupdrill.com</WebPage>
+</CommunityApplications>
