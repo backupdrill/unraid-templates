@@ -28,7 +28,7 @@ The CLI is open source (MIT): https://github.com/backupdrill/cli
 ### 2026-11-05
 Initial release (CLI 2.10.0).
   </Changes>
-  <Config Name="Schedule (cron)" Target="BACKUPDRILL_CRON" Default="0 3 * * 0" Description="When to run a backup, as a cron expression in the server's time zone. The default is Sundays at 03:00. Leave empty to run one backup each time the container starts." Type="Variable" Display="always" Required="false" Mask="false">0 3 * * 0</Config>
+  <Config Name="Schedule (cron)" Target="BACKUPDRILL_CRON" Default="" Description="When to run a backup, as a cron expression in the server's time zone. The default is Sundays at 03:00. Leave empty to run one backup each time the container starts." Type="Variable" Display="always" Required="false" Mask="false">0 3 * * 0</Config>
   <Config Name="Database URL" Target="BACKUPDRILL_DATABASE_URL" Default="" Description="Supabase Session pooler connection string with the database password filled in, e.g. postgresql://postgres.PROJECT_REF:PASSWORD@aws-0-REGION.pooler.supabase.com:5432/postgres" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Project name" Target="BACKUPDRILL_PROJECT_NAME" Default="supabase" Description="A readable name used in the bucket path and the manifest." Type="Variable" Display="always" Required="false" Mask="false">supabase</Config>
   <Config Name="Bucket" Target="BACKUPDRILL_S3_BUCKET" Default="" Description="Name of the destination bucket." Type="Variable" Display="always" Required="true" Mask="false"/>
